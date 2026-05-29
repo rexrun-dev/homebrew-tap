@@ -5,21 +5,21 @@
 class Rex < Formula
   desc "Zero-config universal project runner"
   homepage "https://rexrun.dev"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rexrun-dev/rex/releases/download/v0.4.0/rex_0.4.0_darwin_amd64.tar.gz"
-      sha256 "4a3e2ad8753b84c9a16b8a0738afca491188db29c0e2f5ecd162efe301a70577"
+      url "https://github.com/rexrun-dev/rex/releases/download/v0.5.0/rex_0.5.0_darwin_amd64.tar.gz"
+      sha256 "6526571963d5e93d34264877b748265b16b3187133cb74aba4d1beaede4c8ec5"
 
       define_method(:install) do
         bin.install "rex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rexrun-dev/rex/releases/download/v0.4.0/rex_0.4.0_darwin_arm64.tar.gz"
-      sha256 "46af6bd0df2921a39ad277240e72babeb0255377b3f4e0859e7744ef4464ae91"
+      url "https://github.com/rexrun-dev/rex/releases/download/v0.5.0/rex_0.5.0_darwin_arm64.tar.gz"
+      sha256 "27dc0f5d3e9ee341217a5bb9015d673cf5d7a2aa2a2f6ff70f44f61636293495"
 
       define_method(:install) do
         bin.install "rex"
@@ -29,15 +29,15 @@ class Rex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rexrun-dev/rex/releases/download/v0.4.0/rex_0.4.0_linux_amd64.tar.gz"
-      sha256 "86e7f861144c7458611eb5ce143ad3886b34ca0b69e41373cd61ec513eeb197b"
+      url "https://github.com/rexrun-dev/rex/releases/download/v0.5.0/rex_0.5.0_linux_amd64.tar.gz"
+      sha256 "d4408ede49273ffcf0b8a0bc99c1a7207e07fbc33e057d60e56d690432fd45ee"
       define_method(:install) do
         bin.install "rex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rexrun-dev/rex/releases/download/v0.4.0/rex_0.4.0_linux_arm64.tar.gz"
-      sha256 "b2bf0e2d9f399a1346396fe8a0455b3eb86091f5566e373ebb511ab9e08a18de"
+      url "https://github.com/rexrun-dev/rex/releases/download/v0.5.0/rex_0.5.0_linux_arm64.tar.gz"
+      sha256 "e36b66356c67822405fce3ddbe51465655f5a8811160b12ea8d111e8b5b762a7"
       define_method(:install) do
         bin.install "rex"
       end
